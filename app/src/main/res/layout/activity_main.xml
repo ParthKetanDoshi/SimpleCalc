@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvRes"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:layout_margin="20dp"
+        android:textSize="80dp"
+        android:textAlignment="center"
+        android:text="Result" />
+
+    <EditText
+        android:id="@+id/etX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Enter First Number"
+        android:inputType="number"
+        android:layout_below="@id/tvRes" />
+
+    <EditText
+        android:id="@+id/etY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Enter Second Number"
+        android:inputType="number"
+        android:layout_below="@id/etX" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="+"
+        android:textSize="20dp"
+        android:layout_below="@id/etY"/>
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:text="-"
+        android:textSize="20dp"
+        android:layout_below="@id/btnAdd"/>
+
+    <Button
+        android:id="@+id/btnMul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="*"
+        android:textSize="20dp"
+        android:layout_below="@id/btnSub"/>
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="/"
+        android:textSize="20dp"
+        android:layout_below="@id/btnMul"/>
+
+</RelativeLayout>
